@@ -1,12 +1,23 @@
-# React + Vite
+ A portfolio website with a React frontend and Node.js/Express backend, deployed on Vercel and Render, using MongoDB Atlas for data storage.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ ## Deployment
+ - **Frontend**: Hosted on Vercel at `https://portfolio-client-7bf70vari-prajwal-reddy-rs-projects.vercel.app`
+ - **Backend**: Hosted on Render at `https://portfolio-server.onrender.com`
+ - **Database**: MongoDB Atlas, `portfolio` database, `contacts` collection
+ - **Setup**:
+   1. Pushed backend to GitHub (`portfolio-server`), deployed on Render with `MONGO_URI`, `EMAIL_USER`, `EMAIL_PASS`.
+   2. Pushed frontend to GitHub (`portfolio-client`), deployed on Vercel.
+   3. Updated backend CORS to allow Vercel URL.
+ - **Testing**: Send POST to `/api/contact`, verify data in Atlas, email in Gmail.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ ## Local Testing
+ ```bash
+ # Backend
+ cd server
+ npm install
+ npm run dev
+ # Frontend
+ cd client
+ npm install
+ npm run dev
+ ```
