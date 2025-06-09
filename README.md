@@ -1,7 +1,7 @@
  A portfolio website with a React frontend and Node.js/Express backend, deployed on Vercel and Render, using MongoDB Atlas for data storage.
 
  ## Deployment
- - **Frontend**: Hosted on Vercel at `https://portfolio-client-7bf70vari-prajwal-reddy-rs-projects.vercel.app`
+ - **Frontend**: Hosted on Vercel at `https://portfolio-client-prajwal-reddy-rs-projects.vercel.app/`
  - **Backend**: Hosted on Render at `https://portfolio-server.onrender.com`
  - **Database**: MongoDB Atlas, `portfolio` database, `contacts` collection
  - **Setup**:
